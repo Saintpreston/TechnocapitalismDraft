@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main-yellow-color: FFE60A;
+
+}
+
+::-webkit-scrollbar{
+    width: .5em;
+
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgba(155, 155, 155, 0.6);
+    border-radius: 100vw;
+    margin-block: .5em;
+}
+
+
+::-webkit-scrollbar-thumb{
+    background-color: #FFE60A;
+    border-radius: 100vw;
+}
+
+body{
+    height:80vh ;
+}
+
+h1{
+    font-family: "Roboto Mono",sans-serif;
+    font-size: 3.5rem;
+
+}
+
+.hero-container {
+    /*background-color: rgba(255, 255, 255, 0.85);*/
+    height: 500vh; /*this needs to be bigger to allow space for the footer*/
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+
+
+}
+
+
+
+ .landing-container{
+
+     min-width: 100%;
+     width: 100%;
+     max-width: 100%;
+     height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+     flex-wrap: wrap;
+    flex-basis: 100%;
+
+     scroll-snap-align: center;
+    overflow: hidden;
+
+}
+
+ .read-more{
+     background-color:#FFE60A;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-flow: column;
+    transition: all 0.4s ease-in;
+ }
+
+ .read-more p{
+     padding: 10%;
+     font-family: "Roboto Mono",sans-serif;
+ }
+
+.slider{
+    width: 100%;
+    height: 100%;
+
+}
+
+.slider section{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+
+}
+
+.description-box {
+
+    width: 60%;
+    align-self: unset;
+    color: white;
+    font-family: "Roboto Mono",sans-serif;
+    display: flex;
+    justify-content: flex-end;
+}
+.description {
+    width: 50%;
+    color: white;
+    font-family: "Roboto Mono",sans-serif;
+}
+/*.outro{*/
+/*    background-color: #E5E5E5;*/
+/*    width: 100%;*/
+/*    height: available;*/
+/*}*/
+
+
+#canv {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.controls  {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+   position: absolute;
+}
+
+.arrow-left{
+    cursor: pointer;
+}
+.arrow-right{
+    cursor: pointer;
+}
