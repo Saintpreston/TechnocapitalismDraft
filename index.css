@@ -29,9 +29,41 @@ body{
     height:80vh ;
 }
 
+.header{
+    min-height: 8vh;
+    min-width: 100%;
+    background-color: rgb(189, 189, 189);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    z-index: 999;
+    position: fixed;
+    
+}
+
+    .header p {
+
+        font-size: 1em;
+        font-family:  "Roboto Mono",sans-serif;
+        max-width: 75%;
+        margin-top: 3vh;
+        color: black;
+        
+        }
+
+        p:hover {
+            color:rgb(255, 0, 0)
+        }
+
 h1{
     font-family: "Roboto Mono",sans-serif;
     font-size: 3.3rem;
+
+}
+
+h4{
+    font-family: "Roboto Mono",sans-serif;
+    font-size: 6rem;
 
 }
 
@@ -144,7 +176,6 @@ h1{
 
 #canv {
     position: fixed;
-    top: 0;
     left: 0;
 }
 .controls  {
