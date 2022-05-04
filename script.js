@@ -42,8 +42,17 @@ function matrix () {
 
 setInterval(matrix, 50);
 
+
+
+
+
+
+
 //setting up carousel
 const slider = document.querySelector('.read-more')
+const slider2 = document.querySelector('.read-more2')
+const slider3 = document.querySelector('.read-more3')
+const slider4 = document.querySelector('.read-more4')
 const rightArrow = document.querySelectorAll('.arrow-right');
 const leftArrow = document.querySelectorAll('.arrow-left');
 
@@ -54,32 +63,47 @@ for (let i = 0; i < rightArrow.length; i ++) {
 
     rightArrow[i].addEventListener('click', () => {
 
-        slider.style.transform = `translate(${-100}%)`
 
-        // if (sectionIndex === 1) {
-        //     rightArrow.style.display = 'none'
-        // } else {
-        //     rightArrow.style.display = 'auto'
-        // }
-
-
+        if (i == 0){
+            slider.style.transform = `translate(${-100}%)`
+    
+        }
+        if (i == 1){
+            slider2.style.transform = `translate(${-100}%)`
+    
+        }
+        if (i == 2){
+            slider3.style.transform = `translate(${-100}%)`
+    
+        }
+        if (i == 3){
+            slider4.style.transform = `translate(${-100}%)`
+    
+        }
     })
 }
+
 
 for (let i = 0; i < leftArrow.length; i ++) {
 
     leftArrow[i].addEventListener('click', () => {
 
-        console.log('click');
-        slider.style.transform = `translate(${100}%)`
-
-        // if (sectionIndex === 1) {
-        //     rightArrow.style.display = 'none'
-        // } else {
-        //     rightArrow.style.display = 'auto'
-        // }
-
-
+        if (i == 0){
+            slider.style.transform = `translate(${100}%)`
+    
+        }
+        if (i == 1){
+            slider2.style.transform = `translate(${100}%)`
+    
+        }
+        if (i == 2){
+            slider3.style.transform = `translate(${100}%)`
+    
+        }
+        if (i == 3){
+            slider4.style.transform = `translate(${100}%)`
+    
+        }
     })
 }
 

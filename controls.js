@@ -1,1 +1,0 @@
-let sectionIndex = 0;
