@@ -58,7 +58,7 @@ body{
         }
 
         a:hover {
-            color:rgb(255, 0, 0)
+            color:rgb(132, 0, 255)
         }
 
 p {
@@ -170,11 +170,12 @@ h4{
 }
 
 .description-box {
+    width: 70vh;
     align-self: right;
     color: white;
     font-family: "Roboto Mono",sans-serif;
     position: relative;
-    left: 30vh;
+    left: 20vh;
     font-size: 0.9em;
 }
 
@@ -223,12 +224,12 @@ h4{
 }
 
 .arrow-right:hover {
-    border-color: rgb(255, 0, 0);
+    border-color: rgb(132, 0, 255);
 
 }
 
 .arrow-left:hover {
-    border-color: rgb(255, 0, 0);
+    border-color: rgb(132, 0, 255);
 
 }
 
@@ -259,31 +260,6 @@ max-width: 75%;
         
         }
     
-.line-1{
-    position: relative;
-    top: 50%;  
-    width: 50em;
-    margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 180%;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);    
-}
 
-/* Animation */
-.anim-typewriter{
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
-}
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 24em;}
-}
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
-}
 
 
